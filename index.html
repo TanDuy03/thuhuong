@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thu Hương</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            background-color: pink;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake"><i class="fa-solid fa-heart" style="color: red;"></i></div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake"><i class="fa-solid fa-heart" style="color: red;"></i></div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake"><i class="fa-solid fa-heart" style="color: red;"></i></div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake"><i class="fa-solid fa-heart" style="color: red;"></i></div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake"><i class="fa-solid fa-heart" style="color: red;"></i></div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake"><i class="fa-solid fa-heart" style="color: red;"></i></div>
+        <div class="snowflake">❆</div>
+    </div>
+    <!--  -->
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake"><i class="fa-solid fa-heart" style="color: red;"></i></div>
+        <div class="snowflake"><i class="fa-solid fa-heart" style="color: red;"></i></div>
+        <div class="snowflake"><i class="fa-solid fa-heart" style="color: red;"></i></div>
+        <div class="snowflake"><i class="fa-solid fa-heart" style="color: red;"></i></div>
+        <div class="snowflake"><i class="fa-solid fa-heart" style="color: red;"></i></div>
+        <div class="snowflake"><i class="fa-solid fa-heart" style="color: red;"></i></div>
+        <div class="snowflake"><i class="fa-solid fa-heart" style="color: red;"></i></div>
+        <div class="snowflake"><i class="fa-solid fa-heart" style="color: red;"></i></div>
+        <div class="snowflake"><i class="fa-solid fa-heart" style="color: red;"></i></div>
+    </div>
+    <!--  -->
+    <div class="heart" style="width: 300px; height: 350px;">
+        <img src="abc.png" class=heartie style="width: 300px; height: 350px;">
+        <img src="12333.jpg" class=heartie style="width: 300px; height: 350px;">
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span>
+        </div>
+        
+        
+        <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("heartie");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+        
+        <style>
+        .heartie {display: none;}
+        
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+          from {opacity: 1} 
+          to {opacity: 1}
+        }
+        
+        @keyframes fade {
+          from {opacity: 1} 
+          to {opacity: 1}
+        }
+        
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+          from {opacity: 1} 
+          to {opacity: 1}
+        }
+        
+        @keyframes fade {
+          from {opacity: 1} 
+          to {opacity: 1}
+        }
+        
+        .heart {
+        -webkit-mask-image: url(like.png);
+        -webkit-mask-size: 100%;
+        -webkit-mask-repeat: no-repeat;
+        width:10em;
+        animation: moving 2s infinite;
+        animation-name:moving;
+        animation-duration:2s;
+        animation-iteration-count:infinite;
+        animation-timing-function: cubic-bezier(.75,.03,.13,.99);
+        animation-fill-mode: backwards;
+        animation-play-state: running;
+        transform:perspective(400px);
+        position:absolute;
+        top:10em;
+        left:7em;
+        }
+        
+        .heart img {
+        width:10em;
+        }
+        
+        
+        @keyframes moving {
+        0% { transform: rotateY(0deg) translateY(-2em); } 
+        25% { transform: rotate(-25deg) translateY(-20em); } 
+        50% { transform:  rotate(15deg) translateY(-14em); } 
+        75% { transform: rotateY(-180deg) translateY(-9em); } 
+        100% { transform: rotateY(360deg) translateY(-2em); }
+        }
+     </style>
+    </div>
+    <div style="font-size: 25px; color: red;margin-top: 450px;">
+        <marquee behavior="" direction="">Này t tự code không copy nè</marquee>
+    </div>
+  </body>
+</html>
